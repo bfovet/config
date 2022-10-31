@@ -1,0 +1,19 @@
+[user]
+    name = Benjamin Fovet
+[filter "lfs"]
+    smudge = git-lfs smudge -- %f
+    process = git-lfs filter-process
+    required = true
+    clean = git-lfs clean -- %f
+[alias]
+    # Go to the github/gitlab page for this repo
+    go = "!f() {\
+        url=$(git remote -v | grep '^origin\\|^github\\|^gitlab' | \
+            sort -r | \
+            egrep -o 'git..b.com[:/][^/ ]+/[^/ ]+' | head -1 | \
+            perl -pe 's@(git..b\\.com).([^/ \\.]+)/([^/ \\.]+)(.git)?@https://\\1/\\2/\\3@' \
+        ) && \
+        python -c \"import webbrowser; webbrowser.open('${url}')\"; \
+    }; f"
+[init]
+	defaultBranch = main

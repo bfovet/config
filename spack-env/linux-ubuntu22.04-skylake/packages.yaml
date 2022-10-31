@@ -1,0 +1,269 @@
+packages:
+  openssl:
+    externals:
+    - spec: openssl@3.0.2
+      prefix: /usr
+  findutils:
+    externals:
+    - spec: findutils@4.8.0
+      prefix: /usr
+  curl:
+    externals:
+    - spec: curl@7.81.0+gssapi+ldap+nghttp2
+      prefix: /usr
+  cmake:
+    externals:
+    - spec: cmake@3.24.2
+      prefix: /usr
+  iwyu:
+    externals:
+    - spec: iwyu@0.17
+      prefix: /usr
+  ninja:
+    externals:
+    - spec: ninja@1.10.1
+      prefix: /usr
+  automake:
+    externals:
+    - spec: automake@1.16.5
+      prefix: /usr
+  groff:
+    externals:
+    - spec: groff@1.22.4
+      prefix: /usr
+  git:
+    externals:
+    - spec: git@2.34.1~tcltk
+      prefix: /usr
+  texinfo:
+    externals:
+    - spec: texinfo@6.8
+      prefix: /usr
+  libtool:
+    externals:
+    - spec: libtool@2.4.6
+      prefix: /usr
+  autoconf:
+    externals:
+    - spec: autoconf@2.71
+      prefix: /usr
+  binutils:
+    externals:
+    - spec: binutils@2.38
+      prefix: /usr
+  diffutils:
+    externals:
+    - spec: diffutils@3.8
+      prefix: /usr
+  m4:
+    externals:
+    - spec: m4@1.4.18
+      prefix: /usr
+  coreutils:
+    externals:
+    - spec: coreutils@8.32
+      prefix: /usr
+  openssh:
+    externals:
+    - spec: openssh@8.9p1
+      prefix: /usr
+  tar:
+    externals:
+    - spec: tar@1.34
+      prefix: /usr
+  libpciaccess:
+    externals:
+      - spec: libpciaccess@0.16
+        prefix: /usr
+  perl:
+    externals:
+      - spec: perl@5.34.0
+        prefix: /usr
+  libevent:
+    externals:
+      - spec: libevent@2.1.12
+        prefix: /usr
+  libunwind:
+    externals:
+      - spec: libunwind@1.3.2
+        prefix: /usr
+  elfutils:
+    externals:
+      - spec: elfutils@0.186
+        prefix: /usr
+  python:
+    externals:
+      - spec: python@3.10.6
+        prefix: /usr
+  ncurses:
+    externals:
+      - spec: ncurses@6.3
+        prefix: /usr
+  freetype:
+    externals:
+      - spec: freetype@2.11.1
+        prefix: /usr
+  fltk:
+    externals:
+      - spec: fltk@1.3.8
+        prefix: /usr
+  glx:
+    externals:
+      - spec: glx@1.4.0
+        prefix: /usr
+  mesa:
+    externals:
+      - spec: mesa@22.0.5
+        prefix: /usr
+  libx11:
+    externals:
+      - spec: libx11@1.7.5
+        prefix: /usr
+  libxi:
+    externals:
+      - spec: libxi@1.8
+        prefix: /usr
+  py-virtualenv:
+    externals:
+      - spec: py-virtualenv@20.13.0
+        prefix: /usr/lib/python3.10
+  py-numpy:
+    externals:
+      - spec: py-numpy@1.12.5
+        prefix: /usr/lib/python3.10
+  py-pyyaml:
+    externals:
+      - spec: py-pyyaml@5.4.1
+        prefix: /usr/lib/python3.10
+  py-pip:
+    externals:
+      - spec: py-pip@22.0.2
+        prefix: /usr/lib/python3.10
+  py-setuptools:
+    externals:
+      - spec: py-setuptools@59.6.0
+        prefix: /usr/lib/python3.10
+  py-jsonschema:
+    externals:
+      - spec: py-jsonschema@3.2.0
+        prefix: /usr/lib/python3.10
+  py-lxml:
+    externals:
+      - spec: py-lxml@4.8.0
+        prefix: /usr/lib/python3.10
+  py-requests:
+    externals:
+      - spec: py-requests@2.25.1
+        prefix: /usr/lib/python3.10
+  py-six:
+    externals:
+      - spec: py-six@1.16.0
+        prefix: /usr/lib/python3.10
+  py-wheel:
+    externals:
+      - spec: py-wheel@0.37.1
+        prefix: /usr/lib/python3.10
+  py-click:
+    externals:
+      - spec: py-click@8.0.3
+        prefix: /usr/lib/python3.10
+  libxext:
+    externals:
+      - spec: libxext@1.3.3
+        prefix: /usr
+  libxmu:
+    externals:
+      - spec: libxmu@1.1.3
+        prefix: /usr
+  bison:
+    externals:
+      - spec: bison@3.8.2
+        prefix: /usr
+  py-toml:
+    externals:
+      - spec: py-toml@0.10.2
+        prefix: /usr/lib/python3.10
+  gmp:
+    externals:
+      - spec: gmp@6.2.1
+        prefix: /usr
+  mesa-glu:
+    externals:
+      - spec: mesa-glu@9.0.2
+        prefix: /usr
+  kbproto:
+    externals:
+      - spec: kbproto@1.14
+        prefix: /usr
+  xtrans:
+    externals:
+      - spec: xtrans@1.4.0
+        prefix: /usr
+  libice:
+    externals:
+      - spec: libice@1.0.10
+        prefix: /usr
+  libsm:
+    externals:
+      - spec: libsm@1.2.3
+        prefix: /usr
+  libxt:
+    externals:
+      - spec: libxt@1.2.1
+        prefix: /usr
+  libev:
+    externals:
+      - spec: libev@4.33
+        prefix: /usr
+  libxrender:
+    externals:
+      - spec: libxrender@0.9.10
+        prefix: /usr
+  libxscrnsaver:
+    externals:
+      - spec: libxscrnsaver@1.2.3
+        prefix: /usr
+  libxft:
+    externals:
+      - spec: libxft@2.3.4
+        prefix: /usr
+  fontconfig:
+    externals:
+      - spec: fontconfig@2.13.1
+        prefix: /usr
+  tcl:
+    externals:
+      - spec: tcl@8.6.11
+        prefix: /usr
+  tk:
+    externals:
+      - spec: tk@8.6.11
+        prefix: /usr
+  openmpi:
+    externals:
+      - spec: openmpi@4.1.2
+        prefix: /usr
+  pmix:
+    externals:
+      - spec: pmix@4.1.2
+        prefix: /usr
+  metis:
+    externals:
+      - spec: metis@5.1.0
+        prefix: /usr
+  parmetis:
+    externals:
+      - spec: parmetis@4.0.3
+        prefix: /usr
+  pkg-config:
+    externals:
+      - spec: pkg-config@0.29.2
+        prefix: /usr
+  flex:
+    externals:
+      - spec: flex@2.6.4+lex
+        prefix: /usr
+  gmake:
+    externals:
+      - spec: gmake@4.3
+        prefix: /usr

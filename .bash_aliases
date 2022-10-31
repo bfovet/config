@@ -14,6 +14,9 @@ encrypt() {
     sudo umount ${1}
 }
 
+source git-prompt
+export PS1="[\[\e[1;36m\]\u\[\e[0;39m\]@\h \[\033[01;34m\]\W\[\033[00m\]]\[\e[0;32m\]\$(__git_ps1) \[\e[0;39m\]\$ "
+
 # editor
 export EDITOR=emacs
 export GIT_EDITOR=emacs

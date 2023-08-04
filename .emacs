@@ -1,9 +1,27 @@
-(package-initialize)
 (require 'package)
+
 (add-to-list 'package-archives '("melpa-stable" .
 				 "https://stable.melpa.org/packages/") t)
 
-(dolist (package '(use-package))
+;; use these if behind a proxy
+;; rsync -avz --delete --progress elpa.gnu.org::elpa/. elpa
+;; rsync -avz --delete --progress rsync://melpa.org/packages/ melpa
+;; (add-to-list 'package-archives
+;; 	     '("melpa_local" . "/ccc/dsku/nfs-server/user/cont001/ocre/fovetb/work/products/user/emacs-mirrors/melpa/") t)
+;; (add-to-list 'package-archives
+;; 	     '("elpa_local" . "/ccc/dsku/nfs-server/user/cont001/ocre/fovetb/work/products/user/emacs-mirrors/elpa/") t)
+
+;; (setq package-check-signature nil)
+
+(setq packages '(company lsp-mode yaml-mode json-mode dockerfile-mode cmake-mode magit bash-completion))
+(package-initialize)
+
+; fetch the list of packages available 
+(unless package-archive-contents
+  (package-refresh-contents))
+
+; install the missing packages
+(dolist (package packages)
   (unless (package-installed-p package)
     (package-install package)))
 
@@ -39,12 +57,6 @@
 (add-to-list 'custom-theme-load-path "~/.emacs.d/emacs-one-themes")
 
 (load-theme 'one-dark t)
-
-(dolist (package '(yaml-mode json-mode dockerfile-mode cmake-mode
-			     magit bash-completion))
-  (unless (package-installed-p package)
-    (package-install package))
-  (require package))
 
 ;; YAML mode
 (require 'yaml-mode)

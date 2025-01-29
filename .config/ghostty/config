@@ -1,0 +1,15 @@
+font-family = "Liga SFMono Nerd Font"
+#font-family = "Inconsolata Nerd Font"
+font-style = Regular
+font-size = 9
+font-thicken = true
+
+cursor-style = block
+cursor-style-blink = false
+
+shell-integration = bash
+shell-integration-features = no-cursor
+
+theme = Molokai
+
+unfocused-split-opacity = 1
